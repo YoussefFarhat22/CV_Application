@@ -13,7 +13,7 @@ const Education = ({display,handleClick}) => {
   <>
   <form className='form'>
     <div className='edu-title'>
-    <h1>Education</h1>
+    <p className='section-title'>Education</p>
     <ChevronDown onClick={()=>handleClick()}/>
     </div>
     {display && <div className="edu-container">

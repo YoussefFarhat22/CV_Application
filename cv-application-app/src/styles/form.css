@@ -1,3 +1,8 @@
+body{
+  padding:10px 30px;
+  background-color: #f9fafb;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .cell{
   display: flex;
   flex-direction: column;
@@ -5,14 +10,15 @@
 }
 
 .form{
-  border: 1px solid grey;
+  border: 1px solid #e2e8f0;
   display: flex;
   flex-direction: column;
   gap: 15px;
   border-radius: 12px;
-  max-width: 350px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px 10px;
+  width: 350px;
+
+
+  padding: 15px 35px;
 }
 
 .edu-title{
@@ -22,8 +28,85 @@
   cursor: pointer;
 }
 
+.phone-icon,.mail-icon{
+  color: #9ca3af;
+}
+
+input{
+  border:1px solid #e2e8f0;
+  padding: .5rem;
+  border-radius: 12px;
+ 
+}
+
 .form-container{
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
+}
+
+.app-container{
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+}
+
+.cv{
+  width: 60%;
+  border: 3px solid black;
+  /* border-radius: 12px; */
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.personal-info{
+  background-color: rgb(0, 78, 82);
+  padding:25px 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-height: 100px;
+}
+
+.name-job{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 8px;
+}
+
+.fullName{
+  color: white;
+  font-size: 2.4rem;
+  
+}
+
+.app-title{
+  text-align: center;
+  margin-bottom: 50px;
+  color: rgb(0, 78, 82);
+}
+
+input:active{
+  border: 1px solid rgb(57, 245, 255);
+}
+
+.email-info,.phone-info{
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 8px;
+}
+
+.contact-info{
+  display: flex;
+  gap: 60px;
+}
+
+
+.section-title{
+  font-size: 1.3rem;
+  font-weight: 700;
 }

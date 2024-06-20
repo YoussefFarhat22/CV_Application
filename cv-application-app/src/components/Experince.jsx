@@ -12,7 +12,7 @@ const Experince = ({display,handleClick}) => {
   <>
   <form className='form'>
     <div className='edu-title'>
-    <h1>Experience</h1>
+    <p className='section-title'>Experience</p>
     <ChevronDown onClick={()=>handleClick()}/>
     </div>
     {display && <div className="edu-container">
