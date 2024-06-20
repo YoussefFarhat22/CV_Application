@@ -1,34 +1,31 @@
-import '../styles/form.css'
-import '../styles/cv.css'
+import { Mail, Phone } from "lucide-react"
 
-const CV = ({ name, email, phone, jobTitle,education, experience, skills }) => {
+
+const Cv = ({firstName,lastName,jobTitle,email,phoneNumber}) => {
   return (
-    <div className='card-cv'>
-      
-      <div className='cv-top'>
-      <div>
-      <p className='name'>{name}</p>
-      <p className='jobTitle'>{jobTitle}</p>
+    <div>
+      <div className="personal-info">
+        <p>{firstName}</p>
+        <p>{lastName}</p>
+
+        <p>{jobTitle}</p>
+        <div>
+          <Mail />
+          {email}
+        </div>
+        <div>
+            <Phone />
+            {phoneNumber}
+        </div>
       </div>
-      <div>
-      <p className='email'>{email}</p>
-      <p className='phone'>{phone}</p>
+      <div className="education-info">
+
       </div>
-      </div>
-      <div >
-      <p className='education'>Education</p>
-      <p>{education}</p>
-      </div>
-      <div >
-      <p className='education'>Experience</p>
-      <p>{experience}</p>
-      </div>
-      <div>
-        <p className='education'>Skills</p>
-      <p> {skills}</p>
+      <div className="experience-info">
+
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CV;
+export default Cv
