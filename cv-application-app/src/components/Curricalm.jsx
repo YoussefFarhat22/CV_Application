@@ -1,7 +1,7 @@
 import React ,{ useRef } from 'react';
 import { useReactToPrint } from 'react-to-print';
 
-const Cv = React.forwardRef(({generalInfo,education,experience},ref) => {
+const Curricalm = React.forwardRef(({generalInfo,education,experience},ref) => {
   return (
     <div ref={ref} className="w-[850px] flex flex-col">
 
@@ -77,4 +77,4 @@ const Cv = React.forwardRef(({generalInfo,education,experience},ref) => {
 })
 
 
-export default Cv;
+export default Curricalm;

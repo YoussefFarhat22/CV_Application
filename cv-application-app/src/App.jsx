@@ -1,11 +1,12 @@
 import { useState,useRef } from 'react';
 
 import { useReactToPrint } from 'react-to-print';
-import Cv from './components/Cv';
+
 
 import GeneraleInfo from './components/GeneraleInfo';
 import Education from './components/Education/Education';
 import Experience from './components/Experience/Experience';
+import Curricalm from './components/Curricalm';
 
 
 
@@ -39,7 +40,7 @@ function App() {
       </div>
     
 
-      <Cv ref={cvRef} generalInfo={generalInfomation} education={education} experience={experience}/>
+      <Curricalm ref={cvRef} generalInfo={generalInfomation} education={education} experience={experience}/>
     
       </div>
       </div>
